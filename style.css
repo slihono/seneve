@@ -34,3 +34,13 @@ a:hover{
     padding: 8px 6px;
   }
 }
+h1 {
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
