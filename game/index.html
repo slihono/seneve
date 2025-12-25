@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Duel</title>
+    <link rel="stylesheet" href="../game/assets/css/style.css">
+</head>
+<body>
+
+<div class="container" id="home">
+    <h1>Quiz Duel</h1>
+    <button onclick="createRoom()">Créer une salle</button>
+    <input id="roomInput" placeholder="Code de la salle">
+    <button onclick="joinRoom()">Rejoindre</button>
+</div>
+
+<div class="container" id="setup" style="display:none;">
+    <h2>Créer vos questions</h2>
+    <p id="playerLabel"></p>
+
+    <input id="qInput" placeholder="Question">
+    <input id="aInput" placeholder="Bonne réponse">
+    <button onclick="addQuestion()">Ajouter</button>
+
+    <ul id="questionList"></ul>
+
+    <button onclick="finishQuestions()">Terminer</button>
+</div>
+
+<div class="container" id="game" style="display:none;">
+    <h2 id="turnLabel"></h2>
+    <p id="timer"></p>
+    <p id="question"></p>
+
+    <input id="answerInput" placeholder="Votre réponse">
+    <button onclick="submitAnswer()">Valider</button>
+</div>
+
+<div class="container" id="results" style="display:none;">
+    <h2>Résultats</h2>
+    <p id="scoreA"></p>
+    <p id="scoreB"></p>
+    <button onclick="exportResults()">Exporter les résultats</button>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+<script src="../game/assets/js/firebase.js"></script>
+<script src="../game/assets/js/script.js"></script>
+
+</body>
+</html>
