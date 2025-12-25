@@ -78,7 +78,7 @@ function finishQuestions() {
 function startGame() {
     document.getElementById("setup").style.display = "none";
     document.getElementById("game").style.display = "block";
-    showQuestion();
+   
 }
 
 function showQuestion() {
@@ -164,4 +164,6 @@ function exportResults() {
 db.ref("test").set({
     message: "Hello Diane !"
 });
+document.getElementById("roomCodeDisplay").textContent =
+    "Code de la salle : " + roomId;
 
